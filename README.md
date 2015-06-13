@@ -3,29 +3,29 @@ Demonstrate Spirng JDBCTemplate operation like query(), queryForObject(), QueryF
 PreparedStatementCreator.
 
 #Tech Stack.
-Spring JDBC
-HSQL InMemory DB.
-Lombok
-Gradle.
+Spring JDBC. <br/>
+HSQL InMemory DB. <br/>
+Lombok. <br/>
+Gradle. <br/>
 
 #PreRequisites.
-JDK 1.7 +
+JDK 1.7 +. <br/>
 Gradle(https://gradle.org/docs/current/userguide/installation.html)
 
 #DB configuration?
 Since I am using inMemory Db, no configuration required.
 
 #How to Run?
-Clone the project into your local machine.
-Enter into the directory through command promt.
-Run below gradle task. It build the project and run the test cases.
+Clone the project into your local machine. <br/>
+Enter into the directory through command promt. <br/>
+Run below gradle task. It build the project and run the test cases. <br/>
 <code> >gradle clean test </code>
 
 #How to import into Eclipse IDE?
-Run the below gradle task to create .eclipse and .project file.
+Run the below gradle task to create .eclipse and .project file. <br/>
 <code>gradle clean eclipse</code>
-
-Above command runs successfully import as existing project.
+<br/>
+Above command runs successfully import as existing project.<br/>
 
 IntelliJIDEA user can directly import as gradle project.
 
