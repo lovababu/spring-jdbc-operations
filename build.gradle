@@ -1,0 +1,28 @@
+group 'com.avol'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //Spring dependencies.
+    compile 'org.springframework:spring-context:3.2.10.RELEASE'
+    compile 'org.springframework:spring-jdbc:3.2.10.RELEASE'
+    compile 'org.springframework:spring-aop:3.2.10.RELEASE'
+    compile 'org.springframework:spring-expression:3.2.10.RELEASE'
+    compile 'org.springframework:spring-context-support:3.2.10.RELEASE'
+
+    //lombok dependencies.
+    compile 'org.projectlombok:lombok:1.16.4'
+    //hsql dependencies.
+    compile 'org.hsqldb:hsqldb:2.3.2'
+    //test dependencies.
+    testCompile 'org.springframework:spring-test:3.2.10.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
