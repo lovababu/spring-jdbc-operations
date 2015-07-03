@@ -20,10 +20,11 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 /**
  * Created by Lovababu on 6/13/2015.
+ *
+ * This class demonstrates the JDBCTemplate operations like <code>execute, update , queryForObject, queryForList</code>
  */
 
 @Repository
@@ -52,6 +53,8 @@ public class TweetRepositoryImpl implements TweetRepository{
             }
         }, keyHolder);
         //Keyholder holds the generated key.
+        //jdbcTemplate.update(..) method returns the no of rows effected.
+        // In case if you need the primary key of row inserted by update() method, have to use keyHolder.
         return keyHolder.getKey().longValue();
     }
 
